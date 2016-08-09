@@ -1,0 +1,6 @@
+LOGIN_ERROR: メールアドレスまたはパスワードが間違っています。
+INVALID_CURRENT_PASSWORD: パスワードが間違っています。
+INPUT_SAME_PASSWORD: 同じパスワードを入力してください。
+EMPTY_PAGE: FBページを選んでください。
+EMPTY_ADMIN: 担当者の名前、メールアドレスを入力してください。
+ERROR_MONITOR_RANGE: 監視範囲にエラーが発生しました。

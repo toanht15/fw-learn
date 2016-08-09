@@ -1,0 +1,11 @@
+Debug:0
+defaultAction: defaultAction
+SessionTime: 0
+SubDirectory:
+NotFound: error_page.php
+ErrorPage: error_page.php
+DefaultSessionHandler: aafwDBSessionHandler
+MobileSessionHandler: aafwDBSessionHandler
+SmartTemplatePath: ${AAFW_DIR}/views
+MobileTemplatePath: ${AAFW_DIR}/views
+Sites: admin

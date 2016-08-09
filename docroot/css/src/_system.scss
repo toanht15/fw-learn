@@ -1,0 +1,44 @@
+/* system css */
+%wysiwyg1 {
+    margin: 0;
+    border: 0;
+
+    tr {
+        border: none;
+    }
+    td {
+        padding: 0;
+        border: none;
+        letter-spacing: 0;
+    }
+}
+#wysiwyg_container table {
+    @extend %wysiwyg1;
+}
+#uploadSelector table {
+    @extend %wysiwyg1;
+}
+#stirngselector table {
+    @extend %wysiwyg1;
+}
+#colorpallet table {
+    @extend %wysiwyg1;
+}
+.cke_dialog {
+    width: 550px;
+
+    table {
+        margin: 0;
+        width: inherit;
+        border: none;
+
+        tr {
+            border: inherit;
+        }
+        td {
+            padding: 0;
+            border: inherit;
+            letter-spacing: 0;
+        }
+    }
+}

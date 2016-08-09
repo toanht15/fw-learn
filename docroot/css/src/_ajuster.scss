@@ -1,0 +1,112 @@
+/*---------------
+ajuster
+---------------*/
+/*---------------
+display
+float
+width
+height
+padding
+margin
+border
+align
+---------------*/
+#page {
+    // display
+    .displayI {
+        display: inline;
+    }
+    .displayB {
+        display: block;
+    }
+    .displayIB {
+        display: inline-block;
+    }
+
+    // float parts
+    .floatL {
+        float: left;
+    }
+    .floatR {
+        float: right;
+    }
+
+    // width
+    .wid19p {
+        width: 19%;
+    }
+    .wid27p {
+        width: 27%;
+    }
+    .wid75 {
+        width: 75px;
+    }
+    .wid180 {
+        width: 180px;
+    }
+    .wid240 {
+        width: 240px;
+    }
+    .wid390 {
+        width: 390px;
+    }
+    .wid400 {
+        width: 400px;
+    }
+
+    .mAuto {
+        margin: auto;
+    }
+    @for $value from 0 through 6 {
+        .pAll#{$value * 5} {
+            padding: $value * 5px;
+        }
+        .pTop#{$value * 5} {
+            padding-top: $value * 5px;
+        }
+        .pRight#{$value * 5} {
+            padding-right: $value * 5px;
+        }
+        .pBottom#{$value * 5} {
+            padding-bottom: $value * 5px;
+        }
+        .pleft#{$value * 5} {
+            padding-left: $value * 5px;
+        }
+        .mAll#{$value * 5} {
+            margin: $value * 5px;
+        }
+        .mTop#{$value * 5} {
+            margin-top: $value * 5px;
+        }
+        .mRight#{$value * 5} {
+            margin-right: $value * 5px;
+        }
+        .mBottom#{$value * 5} {
+            margin-bottom: $value * 5px;
+        }
+        .mLeft#{$value * 5} {
+            margin-left: $value * 5px;
+        }
+    }
+    .pAll75 {
+        padding: 75px;
+    }
+
+    // boder
+    .border0 {
+        border: none;
+    }
+
+    // text align
+    .txtL {
+        text-align: left;
+    }
+    .txtC {
+        text-align: center;
+    }
+    .txtR {
+        text-align: right;
+    }
+
+} // /#page

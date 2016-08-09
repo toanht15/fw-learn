@@ -1,0 +1,1662 @@
+@charset "UTF-8";
+/* index
+******************************************
+1 initialize
+2 adjust
+3 layout
+4 common
+5 page
+6 plugin
+7 animation
+8 css hack
+*****************************************/
+
+/* 1 initialize
+******************************************/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ul,ol,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video,canvas
+	{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+		'メイリオ', Meiryo;
+	font-size: 14px;
+	line-height: 1.65;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 100%;
+}
+
+caption,th,td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+fieldset {
+	border: none;
+}
+
+input,textarea,select,label {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+label,button {
+	cursor: pointer;
+}
+
+textarea {
+	overflow: auto;
+}
+
+header,hgroup,footer,article,section,nav,aside,figure {
+	display: block;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+em,strong {
+	font-weight: bold;
+	font-style: normal;
+}
+
+mark {
+	font-weight: bold;
+}
+
+object {
+	vertical-align: middle;
+	outline: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+q:before,q:after {
+	content: '';
+}
+
+code {
+	font-family: monospace;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr,acronym {
+	border: none;
+	font-variant: normal;
+}
+
+abbr[title],dfn[title] {
+	border-bottom: 1px dotted #333;
+	cursor: help;
+}
+
+address,caption,cite,code,dfn,var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+hr {
+	display: none;
+}
+
+pre {
+	font-family: monospace;
+}
+
+body {
+	color: #333;
+	background: #fff;
+}
+/* Atag */
+a:link {
+	color: rgba(12, 195, 30, 1.0);
+	vertical-align: baseline;
+	text-decoration: none;;
+}
+
+a:visited {
+	color: rgba(12, 195, 30, 1.0);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(12, 195, 30, 0.7);
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:active {
+	color: rgba(12, 195, 30, 1.0);
+	text-decoration: none;
+}
+
+/* 2 adjust
+******************************************/
+
+/* 2-1.font */
+/* -size */
+#LW .AFS10 {
+	font-size: 10px;
+}
+
+#LW .AFS11 {
+	font-size: 11px;
+}
+
+#LW .AFS12 {
+	font-size: 12px;
+}
+
+#LW .AFS13 {
+	font-size: 13px;
+}
+
+#LW .AFS14 {
+	font-size: 14px;
+}
+
+#LW .AFS15 {
+	font-size: 15px;
+}
+
+#LW .AFS16 {
+	font-size: 16px;
+}
+
+#LW .AFS17 {
+	font-size: 17px;
+}
+
+#LW .AFS18 {
+	font-size: 18px;
+}
+
+#LW .AFS19 {
+	font-size: 19px;
+}
+
+#LW .AFS20 {
+	font-size: 20px;
+}
+
+#LW .AFS21 {
+	font-size: 21px;
+}
+
+#LW .AFS22 {
+	font-size: 22px;
+}
+
+#LW .AFS23 {
+	font-size: 23px;
+}
+
+#LW .AFS24 {
+	font-size: 24px;
+}
+
+#LW .AFS25 {
+	font-size: 25px;
+}
+
+#LW .AFS26 {
+	font-size: 26px;
+}
+/* -color */
+#LW .AFC1 {
+	color: #333;
+}
+
+#LW .AFC2 {
+	color: #f00;
+}
+
+#LW .AFC3 {
+	color: #c00;
+}
+
+#LW .AFC4 {
+	color: #CA1624;
+}
+
+#LW .AFC5 {
+	color: #B8B6B6;
+}
+/* -weight */
+#LW .AFWBld {
+	font-weight: bold;
+}
+
+#LW .AFWNml {
+	font-weight: normal;
+}
+
+#LW .AFWItl {
+	font-style: italic;
+}
+/* -text decoration */
+#LW .AFDUline {
+	text-decoration: underline;
+}
+
+#LW .AFDLineThrough {
+	text-decoration: line-through;
+}
+
+#LW .AFDNone {
+	text-decoration: none;
+}
+/* 2-2.Align */
+#LW .ATLt {
+	text-align: left;
+}
+
+#LW .ATRt {
+	text-align: right;
+}
+
+#LW .ATCr {
+	text-align: center;
+}
+
+#LW .AVTp {
+	vertical-align: top;
+}
+
+#LW .AVMl {
+	vertical-align: middle;
+}
+
+#LW .AVBm {
+	vertical-align: bottom;
+}
+/* 2-3.float clear */
+#LW .AFLt {
+	float: left;
+}
+
+#LW .AFRt {
+	float: right;
+}
+
+#LW .ACBoth {
+	clear: both;
+}
+
+#LW .ACLt {
+	clear: left;
+}
+
+#LW .ACRt {
+	clear: right;
+}
+/* 2-4.padding */
+/* -padding pixel */
+#LW .AP0 {
+	padding: 0px;
+}
+
+#LW .AP1 {
+	padding: 1px;
+}
+
+#LW .AP2 {
+	padding: 2px;
+}
+
+#LW .AP3 {
+	padding: 3px;
+}
+
+#LW .AP4 {
+	padding: 4px;
+}
+
+#LW .AP5 {
+	padding: 5px;
+}
+
+#LW .AP10 {
+	padding: 10px;
+}
+/* -top */
+#LW .APTp0 {
+	padding-top: 0px;
+}
+
+#LW .APTp1 {
+	padding-top: 1px;
+}
+
+#LW .APTp2 {
+	padding-top: 2px;
+}
+
+#LW .APTp3 {
+	padding-top: 3px;
+}
+
+#LW .APTp4 {
+	padding-top: 4px;
+}
+
+#LW .APTp5 {
+	padding-top: 5px;
+}
+
+#LW .APTp10 {
+	padding-top: 10px;
+}
+/* -right */
+#LW .APRt0 {
+	padding-right: 0px;
+}
+
+#LW .APRt1 {
+	padding-right: 1px;
+}
+
+#LW .APRt2 {
+	padding-right: 2px;
+}
+
+#LW .APRt3 {
+	padding-right: 3px;
+}
+
+#LW .APRt4 {
+	padding-right: 4px;
+}
+
+#LW .APRt5 {
+	padding-right: 5px;
+}
+
+#LW .APRt10 {
+	padding-right: 10px;
+}
+/* -bottom */
+#LW .APBm0 {
+	padding-bottom: 0px;
+}
+
+#LW .APBm1 {
+	padding-bottom: 1px;
+}
+
+#LW .APBm2 {
+	padding-bottom: 2px;
+}
+
+#LW .APBm3 {
+	padding-bottom: 3px;
+}
+
+#LW .APBm4 {
+	padding-bottom: 4px;
+}
+
+#LW .APBm5 {
+	padding-bottom: 5px;
+}
+
+#LW .APBm10 {
+	padding-bottom: 10px;
+}
+/* -left */
+#LW .APLt0 {
+	padding-left: 0px;
+}
+
+#LW .APLt1 {
+	padding-left: 1px;
+}
+
+#LW .APLt2 {
+	padding-left: 2px;
+}
+
+#LW .APLt3 {
+	padding-left: 3px;
+}
+
+#LW .APLt4 {
+	padding-left: 4px;
+}
+
+#LW .APLt5 {
+	padding-left: 5px;
+}
+
+#LW .APLt10 {
+	padding-left: 10px;
+}
+/* 2-5.margin */
+/* -margin pixel */
+#LW .AM0Auto {
+	margin: 0px auto;
+}
+
+#LW .AM0 {
+	margin: 0px;
+}
+
+#LW .AM1 {
+	margin: 1px;
+}
+
+#LW .AM2 {
+	margin: 2px;
+}
+
+#LW .AM3 {
+	margin: 3px;
+}
+
+#LW .AM4 {
+	margin: 4px;
+}
+
+#LW .AM5 {
+	margin: 5px;
+}
+
+#LW .AM10 {
+	margin: 10px;
+}
+/* -top */
+#LW .AMTp0 {
+	margin-top: 0px;
+}
+
+#LW .AMTp1 {
+	margin-top: 1px;
+}
+
+#LW .AMTp2 {
+	margin-top: 2px;
+}
+
+#LW .AMTp3 {
+	margin-top: 3px;
+}
+
+#LW .AMTp4 {
+	margin-top: 4px;
+}
+
+#LW .AMTp5 {
+	margin-top: 5px;
+}
+
+#LW .AMTp10 {
+	margin-top: 10px;
+}
+
+#LW .AMTp25 {
+	margin-top: 25px;
+}
+/* -right */
+#LW .AMRt0 {
+	margin-right: 0px;
+}
+
+#LW .AMRt1 {
+	margin-right: 1px;
+}
+
+#LW .AMRt2 {
+	margin-right: 2px;
+}
+
+#LW .AMRt3 {
+	margin-right: 3px;
+}
+
+#LW .AMRt4 {
+	margin-right: 4px;
+}
+
+#LW .AMRt5 {
+	margin-right: 5px;
+}
+
+#LW .AMRt10 {
+	margin-right: 10px;
+}
+
+#LW .AMRt20 {
+	margin-right: 20px;
+}
+/* -bottom */
+#LW .AMBm0 {
+	margin-bottom: 0px;
+}
+
+#LW .AMBm1em {
+	margin-bottom: 1em;
+}
+
+#LW .AMBm15em {
+	margin-bottom: 1.5em;
+}
+
+#LW .AMBm2em {
+	margin-bottom: 2em;
+}
+
+#LW .AMBm1 {
+	margin-bottom: 1px;
+}
+
+#LW .AMBm2 {
+	margin-bottom: 2px;
+}
+
+#LW .AMBm3 {
+	margin-bottom: 3px;
+}
+
+#LW .AMBm4 {
+	margin-bottom: 4px;
+}
+
+#LW .AMBm5 {
+	margin-bottom: 5px;
+}
+
+#LW .AMBm10 {
+	margin-bottom: 10px;
+}
+
+#LW .AMBm15 {
+	margin-bottom: 15px;
+}
+
+#LW .AMBm20 {
+	margin-bottom: 20px;
+}
+
+#LW .AMBm25 {
+	margin-bottom: 25px;
+}
+
+#LW .AMBm30 {
+	margin-bottom: 30px;
+}
+
+#LW .AMBm50 {
+	margin-bottom: 50px;
+}
+/* -left */
+#LW .AMLt0 {
+	margin-left: 0px;
+}
+
+#LW .AMLt1 {
+	margin-left: 1px;
+}
+
+#LW .AMLt2 {
+	margin-left: 2px;
+}
+
+#LW .AMLt3 {
+	margin-left: 3px;
+}
+
+#LW .AMLt4 {
+	margin-left: 4px;
+}
+
+#LW .AMLt5 {
+	margin-left: 5px;
+}
+
+#LW .AMLt10 {
+	margin-left: 10px;
+}
+
+#LW .AMLt20 {
+	margin-left: 20px;
+}
+/* 2-6.display overflow */
+/* -display */
+#LW .ADispB {
+	display: block;
+}
+
+#LW .ADispIB {
+	display: inline-block;
+}
+
+#LW .ADispIline {
+	display: inline;
+}
+
+#LW .ADispNone {
+	display: none;
+}
+/* -Ovfhidden */
+#LW .AOvfH {
+	overflow: hidden;
+}
+
+#LW .AOvfXH {
+	overflow-x: hidden;
+}
+
+#LW .AOvfYH {
+	overflow-y: hidden;
+}
+/* -Ovfauto */
+#LW .AOvfAuto {
+	overflow: auto;
+}
+
+#LW .AOvfXAuto {
+	overflow-x: auto;
+}
+
+#LW .AOvfYAuto {
+	overflow-y: auto;
+}
+/* -Ovfscroll */
+#LW .AOvfScl {
+	overflow: scroll;
+}
+
+#LW .AOvfXScl {
+	overflow-x: scroll;
+}
+
+#LW .AOvfYScl {
+	overflow-y: scroll;
+}
+/* 2-7.position */
+#LW .APstAbs {
+	position: absolute;
+}
+
+#LW .APstRel {
+	position: relative;
+}
+
+#LW .APstStat {
+	position: static;
+}
+
+#LW .APstFix {
+	position: fixed;
+}
+/* 2-8.width-height */
+#LW .AWid50per {
+	width: 50%;
+}
+
+#LW .AWid100per {
+	width: 100%;
+}
+/* 2-9.clearfix */
+.APkg:before,.APkg:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+}
+
+.APkg:after {
+	clear: both;
+}
+
+.APkg {
+	*zoom: 1;
+}
+
+/* 2 layout
+******************************************/
+#LW {
+	
+}
+
+/* 2-1 header
+-----------------------------------------*/
+#LH {
+	width: 960px;
+	height: 144px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title1 {
+	font-size: 70px;
+	letter-spacing: 0.12em;
+	font-family: "acta-display", sans-serif;
+	line-height: 1em;
+	font-weight: normal;
+	margin: 0;
+	padding: 15px 0 0 0;
+}
+
+.title1 span {
+	font-size: 120px;
+}
+
+.title1 a {
+	color: #CCC;
+	text-decoration: none;
+}
+
+.title1 a:hover {
+	color: #888;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.subtitle {
+	font-size: 26px;
+	position: absolute;
+	bottom: 43px;
+	left: 320px;
+	color: #888;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3",
+		"Hiragino Mincho Pro", serif;
+}
+
+.member {
+	font-size: 13px;
+	position: absolute;
+	bottom: 50px;
+	left: 430px;
+}
+
+.member a {
+	color: #666;
+}
+
+.member a:hover {
+	color: #999;
+	text-decoration: none;
+}
+
+.config {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.config .configset li {
+	float: left;
+	margin: 0;
+	border-left: 1px solid #DDD;
+}
+
+.config .configset li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	background: #CCC;
+	color: #FFF;
+}
+
+.config .configset li a:hover {
+	background: #888;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.config .configset li a.login {
+	background: #CCC url(../../img/base/icon_login.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+
+.config .configset li a.logout {
+	background: #CCC url(../../img/base/icon_logout.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+
+.config .configset li a.login:hover {
+	background: #888 url(../../img/base/icon_login.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+
+.config .configset li a.logout:hover {
+	background: #888 url(../../img/base/icon_logout.png) no-repeat 10px 50%;
+	padding-left: 35px;
+}
+
+.gnavi {
+	background: #CCC;
+	position: relative;
+}
+
+.navi {
+	
+}
+
+.navi li a {
+	color: #FFF;
+	text-decoration: none;
+	background: #CCC;
+}
+
+.navi li a:hover {
+	text-decoration: none;
+	background: #888;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.navi li a {
+	border-right: 1px solid #DDD;
+	float: left;
+	padding: 10px 20px;
+}
+
+.navi li a.current {
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.navi li a.notactive {
+	text-decoration: none;
+	background: #CCC;
+	color: #AAA;
+	cursor: default;
+}
+
+.serach {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 600;
+	position: absolute;
+}
+
+.serach select {
+	border: 1px solid #999;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0 5px 3px 0;
+	float: left;
+}
+
+.serach .ipttext {
+	border: 1px solid #999;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0 5px 3px 30px;
+}
+
+.serach .btn {
+	border-radius: 5px;
+	background: #666;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.serach .btn:hover {
+	border-radius: 5px;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+/* 2-2 page
+-----------------------------------------*/
+#LM {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.pagetitle {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+.comment {
+	position: relative;
+	margin: 30px 0;
+}
+
+.comment .user {
+	width: 169px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../../img/base/icon_arrowL.png) no-repeat right 18px;
+	z-index: 999;
+}
+
+.comment .user .profileimg {
+	
+}
+
+.comment .user .name {
+	padding: 10px 20px 0 20px;
+}
+
+.comment .comment-inner {
+	width: 760px;
+	border: 1px solid #CCC;
+	padding: 15px;
+	margin-left: 168px;
+	position: relative;
+}
+
+.comment .comment-inner2 {
+	width: 930px;
+	border: 1px solid #CCC;
+	padding: 15px;
+	position: relative;
+}
+
+.comment .edit {
+	position: absolute;
+	top: 60px;
+	right: -1px;
+	z-index: 998;
+}
+
+.comment .edit a {
+	padding: 10px;
+	background: rgba(12, 195, 30, 0.8);
+	color: #FFF;
+}
+
+.comment .edit a:hover {
+	background: rgba(43, 149, 5, 0.8);
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.comment .title2 {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 0.5em;
+}
+
+.comment .title2 a {
+	color: #333;
+}
+
+.comment .title2 a:hover {
+	color: #999;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.comment .bookmarkurl {
+	margin-bottom: 1em;
+}
+
+.comment .textbody {
+	margin-bottom: 1em;
+}
+
+.comment .more {
+	margin-bottom: 1em;
+	text-align: right;
+}
+
+.comment .metadata {
+	
+}
+
+.comment .metadata .date {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #CCC;
+	font-size: 11px;
+}
+
+.comment .metadata .category {
+	font-size: 11px;
+}
+
+.comment .star {
+	position: absolute;
+	bottom: 12px;
+	right: 60px;
+}
+
+.comment .star ul {
+	
+}
+
+.comment .star ul li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.comment .star .num {
+	border: 1px solid #CCC;
+	font-size: 10px;
+	line-height: 1;
+	padding: 5px;
+	display: block;
+	margin-right: -1px;
+}
+
+.comment .star .starbtn {
+	background: url(../../img/base/icon_arrowRs.png) no-repeat left 50%;
+	padding-left: 10px;
+	position: absolute;
+	z-index: 500;
+}
+
+.comment .star .starbtn a.starlink {
+	background: #CCC;
+	font-size: 16px;
+	padding: 5px;
+	color: #FFF;
+	line-height: 1;
+}
+
+.comment .star .starbtn a:hover.starlink {
+	background: #333;
+	color: #FFDD00;
+}
+
+.comment .star .starbtn a.starlink-on {
+	background: #333;
+	color: #FFDD00;
+	font-size: 16px;
+	padding: 5px;
+	line-height: 1;
+}
+
+.comment .star .starbtn a:hover.starlink-on {
+	background: #CCC;
+	color: #FFF;
+}
+
+.comment .iptedit1 {
+	border: 1px solid #999;
+	padding: 10px;
+	border-radius: 5px;
+	width: 740px;
+}
+
+.comment .ipttxtedit1 {
+	border: 1px solid #999;
+	padding: 10px;
+	border-radius: 5px;
+	width: 740px;
+}
+
+.comment .btn {
+	border-radius: 5px;
+	background: #666;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.comment .btn:hover {
+	border-radius: 5px;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.thread {
+	width: 760px;
+	min-height: 80px;
+	margin: 0 0 20px 168px;
+	position: relative;
+}
+
+.thread .user {
+	width: 114px;
+	text-align: center;
+	position: absolute;
+	top: 0; :0;
+	background: url(../../img/base/icon_arrowL.png) no-repeat right 18px;
+	z-index: 999;
+}
+
+.thread .comment-inner {
+	width: 646px;
+	border: 1px solid #CCC;
+	padding: 15px;
+	margin-left: 113px;
+	position: relative;
+}
+
+.thread .iptthread {
+	width: 636px;
+	border: 1px solid #999;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.submitButton .btn {
+	border-radius: 5px;
+	background: #666;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.submitButton .btn {
+	border-radius: 5px;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.thread .btn {
+	border-radius: 5px;
+	background: #666;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.thread .btn:hover {
+	border-radius: 5px;
+	background: #333;
+	color: #FFF;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.thread .metadata .date {
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+.thread .edit {
+	position: absolute;
+	bottom: 6px;
+	right: -1px;
+	z-index: 998;
+}
+
+.thread .edit a {
+	padding: 10px;
+	background: rgba(12, 195, 30, 0.8);
+	color: #FFF;
+}
+
+.thread .edit a:hover {
+	background: rgba(43, 149, 5, 0.8);
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.loginpage {
+	width: 390px;
+	border: 1px solid #CCC;
+	padding: 20px;
+	margin: 15px auto 30px auto;
+}
+
+.loginpage .ipttext2 {
+	border: 1px solid #999;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 0;
+	width: 350px;
+	font-size: 20px;
+}
+
+.loginpage .btn2 {
+	border-radius: 5px;
+	background: #666;
+	color: #FFF;
+	padding: 10px 50px;
+	border-style: none;
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+.loginpage .btn2:hover {
+	border-radius: 5px;
+	background: #333;
+	color: #FFF;
+	padding: 10px 50px;
+	border-style: none;
+}
+
+.members {
+	width: 960px;
+	overflow: visible;
+	margin: 20px 0 30px 0;
+}
+
+.members ul {
+	width: 990px;
+}
+
+.members ul li {
+	width: 150px;
+	margin: 0 12px 20px 0;
+	float: left;
+	text-align: center;
+}
+
+.members ul li img {
+	border: 1px solid #DDD;
+}
+
+.members ul li a:hover img {
+	opacity: 0.8;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.memberpage {
+	margin: 30px 0;
+	position: relative;
+}
+
+.memberpage .proimg {
+	width: 180px;
+	float: left;
+	text-align: center;
+}
+
+.memberpage .proimg img {
+	border: 1px solid #DDD;
+}
+
+.memberpage .prodata {
+	width: 780px;
+	margin-left: 180px;
+}
+
+.memberpage .prodata .catlist {
+	margin-left: 20px;
+}
+
+.memberpage .prodata .catlist li {
+	list-style: circle;
+}
+
+.memberpage .edit {
+	position: absolute;
+	top: 80px;
+	right: -1px;
+	z-index: 998;
+}
+
+.memberpage .edit a {
+	padding: 10px;
+	background: rgba(12, 195, 30, 0.8);
+	color: #FFF;
+}
+
+.memberpage .edit a:hover {
+	background: rgba(43, 149, 5, 0.8);
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.memberpage .ipttext4 {
+	border: 1px solid #999;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#file_01,#mask_file_01 {
+	/* 	display:none; */
+	
+}
+
+.file_mask input {
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.file_mask span {
+	display: block;
+	background-image: url(../../img/base/BtnFileUp.png);
+	background-position: left top;
+	height: 50px;
+	width: 152px;
+	cursor: pointer;
+	margin-left: 14px;
+}
+
+.file_mask span:hover {
+	background-position: left bottom;
+	margin-left: 14px;
+}
+
+/* 2-3 footer
+-----------------------------------------*/
+#LF {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-top: 1px solid #CCC;
+}
+
+.copy {
+	text-align: center;
+	background: url(../../img/base/AAlogo.png) no-repeat 790px top;
+}
+
+/* 3 parts
+******************************************/
+/* 3-1 common
+-----------------------------------------*/
+.page {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.page ul {
+	
+}
+
+.page ul li {
+	margin: 30px 20px;
+	display: inline-block;
+}
+
+.page ul li a {
+	padding: 10px;
+	background: #CCC;
+	color: #FFF;
+}
+
+.page ul li a:hover {
+	background: #888;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.totop {
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+}
+
+.totop a {
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #FFF;
+}
+
+.totop a:hover {
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.T1 {
+	border-top: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+.T1 th,.T1 td {
+	border-bottom: 1px solid #DDD;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px 10px;
+}
+
+.T1 th {
+	background: #EEE;
+	width: 8em;
+	border-left: 1px solid #DDD;
+}
+
+.T1 td {
+	
+}
+
+/* 3-2 markdown
+-----------------------------------------*/
+.comment-inner h1,.thread h1 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.comment-inner h2,.thread h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.comment-inner h3,.thread h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.comment-inner h4,.thread h4 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.comment-inner h5,.thread h5 {
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+.comment-inner em,.thread em {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.comment-inner strong,.thread strong {
+	font-weight: bold;
+}
+
+.comment-inner ul,.thread ul {
+	margin: 0 0 1em 0.5em;
+}
+
+.comment-inner ol,.thread ol {
+	margin: 0 0 1em 0.5em;
+}
+
+.comment-inner ul li,.thread ul li {
+	list-style: circle;
+	margin-left: 20px;
+}
+
+.comment-inner ol li,.thread ol li {
+	list-style: decimal;
+	margin-left: 20px;
+}
+
+.comment-inner blockquote,.thread blockquote {
+	background-color: #EFEFEF;
+	padding: 1em 1em 1em 3em;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.comment-inner blockquote:before,.thread blockquote:before {
+	content: "“";
+	font-size: 600%;
+	line-height: 1em;
+	font-family: "ＭＳ Ｐゴシック", sans-serif;
+	color: #DDD;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*4 Modal
+******************************************/
+/* 4-1 Post
+-----------------------------------------*/
+.postmodal {
+	width: 860px;
+	padding: 50px;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	left: 50%;
+	top: 144px;
+	z-index: 999;
+	margin-left: -480px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.postmodal .lftcolum {
+	width: 570px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.postmodal .rgtcolum {
+	width: 230px;
+	margin: 0;
+	padding: 10px;
+	float: right;
+	background: rgba(255, 255, 255, 1.0);
+	border-radius: 7px;
+}
+
+.postmodal .ipttext3 {
+	width: 550px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #000;
+	border-radius: 7px;
+}
+
+.postmodal .text3 {
+	width: 550px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #000;
+	border-radius: 7px;
+}
+
+.postmodal  select {
+	border: 1px solid #999;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.postmodal .btn3 {
+	border-radius: 5px;
+	background: rgba(12, 195, 30, 1.0);
+	color: #FFF;
+	padding: 10px;
+	border-style: none;
+	margin-top: 30px;
+	font-size: 16px;
+	width: 230px;
+}
+
+.postmodal .btn3:hover {
+	border-radius: 5px;
+	background: rgba(43, 149, 5, 1.0);
+	color: #FFF;
+	padding: 10px 50px;
+	border-style: none;
+}
+
+.postmodal .closemodal {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.postmodal .closemodal .closebtn a:hover {
+	opacity: 0.7;
+}

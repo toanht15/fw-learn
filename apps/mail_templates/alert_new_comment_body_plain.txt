@@ -1,0 +1,7 @@
+<#USER_NAME>様
+
+[<#START_DATE>時]から[<#END_DATE>時]までの新着コメントです。
+
+<#CONTENT>
+
+以上です。

@@ -1,0 +1,13 @@
+$accentC: #594983;
+$dullC: #585388;
+$mainC: rgb(100,50,150);
+$darkC: darken($dullC, 10%);
+$paleC: #E6E2EB;
+$borderC: #CDD2DE;
+@charset "UTF-8";
+
+@import '_mixin.scss';
+@import '_base.scss';
+@import '_parts.scss';
+@import '_ajuster.scss';
+@import '_system.scss';

@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+#RewriteRule . index.html [L]
+</IfModule>
+
+#<Files csv_download.php>
+#AuthUserFile /etc/httpd/conf.d/.fbpostmonitor.aa-dev.com.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Member Only"
+#AuthType Basic
+#require valid-user
+#</Files>
+#
+#<Files manage_page.php>
+#AuthUserFile /etc/httpd/conf.d/.fbpostmonitor.aa-dev.com.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Member Only"
+#AuthType Basic
+#require valid-user
+#</Files>
